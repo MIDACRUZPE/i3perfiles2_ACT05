@@ -1,0 +1,3702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laboratorio de Evaluación Conductual | Instituto i3</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      overflow-x: hidden;
+    }
+    .sticker-card {
+      border: 4px solid #ffffff;
+      box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.14), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
+      border-radius: 1.5rem;
+    }
+    .i3-spiral {
+      animation: spinSlow 24s linear infinite;
+    }
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .organic-wave {
+      background-image: radial-gradient(circle at 12% 18%, rgba(250, 204, 21, 0.22) 0%, transparent 32%),
+                        radial-gradient(circle at 88% 42%, rgba(6, 182, 212, 0.16) 0%, transparent 36%),
+                        radial-gradient(circle at 20% 82%, rgba(124, 58, 237, 0.12) 0%, transparent 35%);
+    }
+    html { -webkit-text-size-adjust: 100%; }
+    body > main { min-width: 0; width: 100%; }
+    main, section, article, header, footer { min-width: 0; max-width: 100%; }
+    .sticker-card { max-width: 100%; }
+    h1, h2, h3, p, label, summary, code, #status-banner { overflow-wrap: anywhere; }
+    input.peer:focus-visible + div { outline: 3px solid #7c3aed; outline-offset: 2px; }
+    @media (max-width: 767px) {
+      input:not([type=radio]):not([type=checkbox]):not([type=file]), select, textarea { font-size: 16px !important; }
+    }
+    @media (max-height: 520px), (max-width: 400px) and (max-height: 700px) {
+      header.sticky { position: static !important; }
+    }
+    textarea, input, select {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    textarea:focus, input:focus, select:focus {
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.25);
+      border-color: #7c3aed;
+    }
+  </style>
+<style>*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+.\!container {
+  width: 100% !important;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .\!container {
+    max-width: 640px !important;
+  }
+
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .\!container {
+    max-width: 768px !important;
+  }
+
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .\!container {
+    max-width: 1024px !important;
+  }
+
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .\!container {
+    max-width: 1280px !important;
+  }
+
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\!container {
+    max-width: 1536px !important;
+  }
+
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.collapse {
+  visibility: collapse;
+}
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-0\.5 {
+  margin-bottom: 0.125rem;
+}
+
+.mb-1\.5 {
+  margin-bottom: 0.375rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.table {
+  display: table;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-11 {
+  height: 2.75rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-2\.5 {
+  height: 0.625rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-11 {
+  width: 2.75rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-1\.5 {
+  gap: 0.375rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.space-y-1\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.375rem * var(--tw-space-y-reverse));
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-slate-200 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-divide-opacity, 1));
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-r-xl {
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
+.border-l-4 {
+  border-left-width: 4px;
+}
+
+.border-t-4 {
+  border-top-width: 4px;
+}
+
+.border-amber-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 158 11 / var(--tw-border-opacity, 1));
+}
+
+.border-cyan-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(34 211 238 / var(--tw-border-opacity, 1));
+}
+
+.border-cyan-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(6 182 212 / var(--tw-border-opacity, 1));
+}
+
+.border-cyan-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(8 145 178 / var(--tw-border-opacity, 1));
+}
+
+.border-lime-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(163 230 53 / var(--tw-border-opacity, 1));
+}
+
+.border-lime-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(132 204 22 / var(--tw-border-opacity, 1));
+}
+
+.border-orange-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity, 1));
+}
+
+.border-orange-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 115 22 / var(--tw-border-opacity, 1));
+}
+
+.border-pink-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(236 72 153 / var(--tw-border-opacity, 1));
+}
+
+.border-pink-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(219 39 119 / var(--tw-border-opacity, 1));
+}
+
+.border-purple-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(233 213 255 / var(--tw-border-opacity, 1));
+}
+
+.border-purple-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(192 132 252 / var(--tw-border-opacity, 1));
+}
+
+.border-purple-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(168 85 247 / var(--tw-border-opacity, 1));
+}
+
+.border-purple-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(147 51 234 / var(--tw-border-opacity, 1));
+}
+
+.border-purple-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(126 34 206 / var(--tw-border-opacity, 1));
+}
+
+.border-purple-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 33 168 / var(--tw-border-opacity, 1));
+}
+
+.border-purple-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(88 28 135 / var(--tw-border-opacity, 1));
+}
+
+.border-slate-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity, 1));
+}
+
+.border-slate-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
+}
+
+.border-slate-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(148 163 184 / var(--tw-border-opacity, 1));
+}
+
+.border-slate-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity, 1));
+}
+
+.border-slate-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 23 42 / var(--tw-border-opacity, 1));
+}
+
+.border-slate-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(2 6 23 / var(--tw-border-opacity, 1));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
+.border-white\/40 {
+  border-color: rgb(255 255 255 / 0.4);
+}
+
+.border-yellow-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(253 224 71 / var(--tw-border-opacity, 1));
+}
+
+.border-yellow-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(250 204 21 / var(--tw-border-opacity, 1));
+}
+
+.border-yellow-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity, 1));
+}
+
+.bg-amber-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 243 199 / var(--tw-bg-opacity, 1));
+}
+
+.bg-amber-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 251 235 / var(--tw-bg-opacity, 1));
+}
+
+.bg-cyan-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 254 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-cyan-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 182 212 / var(--tw-bg-opacity, 1));
+}
+
+.bg-cyan-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 145 178 / var(--tw-bg-opacity, 1));
+}
+
+.bg-lime-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 252 203 / var(--tw-bg-opacity, 1));
+}
+
+.bg-lime-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 249 157 / var(--tw-bg-opacity, 1));
+}
+
+.bg-lime-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 230 53 / var(--tw-bg-opacity, 1));
+}
+
+.bg-lime-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 254 231 / var(--tw-bg-opacity, 1));
+}
+
+.bg-orange-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 247 237 / var(--tw-bg-opacity, 1));
+}
+
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
+}
+
+.bg-pink-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 231 243 / var(--tw-bg-opacity, 1));
+}
+
+.bg-pink-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 207 232 / var(--tw-bg-opacity, 1));
+}
+
+.bg-pink-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 242 248 / var(--tw-bg-opacity, 1));
+}
+
+.bg-pink-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity, 1));
+}
+
+.bg-pink-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 24 93 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 245 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-50\/80 {
+  background-color: rgb(250 245 255 / 0.8);
+}
+
+.bg-purple-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 34 206 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 33 168 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 28 135 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 7 100 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-950\/80 {
+  background-color: rgb(59 7 100 / 0.8);
+}
+
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-yellow-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 249 195 / var(--tw-bg-opacity, 1));
+}
+
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity, 1));
+}
+
+.bg-yellow-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity, 1));
+}
+
+.bg-yellow-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.from-purple-700 {
+  --tw-gradient-from: #7e22ce var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(126 34 206 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-pink-500 {
+  --tw-gradient-to: rgb(236 72 153 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #ec4899 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-yellow-400 {
+  --tw-gradient-to: #facc15 var(--tw-gradient-to-position);
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-3\.5 {
+  padding: 0.875rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-3\.5 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-\[11px\] {
+  font-size: 11px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-snug {
+  line-height: 1.375;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.text-amber-900 {
+  --tw-text-opacity: 1;
+  color: rgb(120 53 15 / var(--tw-text-opacity, 1));
+}
+
+.text-cyan-300 {
+  --tw-text-opacity: 1;
+  color: rgb(103 232 249 / var(--tw-text-opacity, 1));
+}
+
+.text-cyan-50 {
+  --tw-text-opacity: 1;
+  color: rgb(236 254 255 / var(--tw-text-opacity, 1));
+}
+
+.text-cyan-900 {
+  --tw-text-opacity: 1;
+  color: rgb(22 78 99 / var(--tw-text-opacity, 1));
+}
+
+.text-lime-300 {
+  --tw-text-opacity: 1;
+  color: rgb(190 242 100 / var(--tw-text-opacity, 1));
+}
+
+.text-lime-400 {
+  --tw-text-opacity: 1;
+  color: rgb(163 230 53 / var(--tw-text-opacity, 1));
+}
+
+.text-lime-700 {
+  --tw-text-opacity: 1;
+  color: rgb(77 124 15 / var(--tw-text-opacity, 1));
+}
+
+.text-lime-900 {
+  --tw-text-opacity: 1;
+  color: rgb(54 83 20 / var(--tw-text-opacity, 1));
+}
+
+.text-lime-950 {
+  --tw-text-opacity: 1;
+  color: rgb(26 46 5 / var(--tw-text-opacity, 1));
+}
+
+.text-orange-50 {
+  --tw-text-opacity: 1;
+  color: rgb(255 247 237 / var(--tw-text-opacity, 1));
+}
+
+.text-pink-600 {
+  --tw-text-opacity: 1;
+  color: rgb(219 39 119 / var(--tw-text-opacity, 1));
+}
+
+.text-pink-900 {
+  --tw-text-opacity: 1;
+  color: rgb(131 24 67 / var(--tw-text-opacity, 1));
+}
+
+.text-pink-950 {
+  --tw-text-opacity: 1;
+  color: rgb(80 7 36 / var(--tw-text-opacity, 1));
+}
+
+.text-purple-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 232 255 / var(--tw-text-opacity, 1));
+}
+
+.text-purple-200 {
+  --tw-text-opacity: 1;
+  color: rgb(233 213 255 / var(--tw-text-opacity, 1));
+}
+
+.text-purple-700 {
+  --tw-text-opacity: 1;
+  color: rgb(126 34 206 / var(--tw-text-opacity, 1));
+}
+
+.text-purple-800 {
+  --tw-text-opacity: 1;
+  color: rgb(107 33 168 / var(--tw-text-opacity, 1));
+}
+
+.text-purple-900 {
+  --tw-text-opacity: 1;
+  color: rgb(88 28 135 / var(--tw-text-opacity, 1));
+}
+
+.text-purple-950 {
+  --tw-text-opacity: 1;
+  color: rgb(59 7 100 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-500 {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-600 {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-950 {
+  --tw-text-opacity: 1;
+  color: rgb(2 6 23 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity, 1));
+}
+
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+}
+
+.text-yellow-900 {
+  --tw-text-opacity: 1;
+  color: rgb(113 63 18 / var(--tw-text-opacity, 1));
+}
+
+.text-yellow-950 {
+  --tw-text-opacity: 1;
+  color: rgb(66 32 6 / var(--tw-text-opacity, 1));
+}
+
+.opacity-85 {
+  opacity: 0.85;
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.drop-shadow {
+  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.hover\:border-purple-500:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(168 85 247 / var(--tw-border-opacity, 1));
+}
+
+.hover\:bg-cyan-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 211 238 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-lime-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 242 100 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-purple-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 33 168 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-slate-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-yellow-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-yellow-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
+}
+
+.peer:checked ~ .peer-checked\:border-purple-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 7 100 / var(--tw-border-opacity, 1));
+}
+
+.peer:checked ~ .peer-checked\:bg-purple-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 33 168 / var(--tw-bg-opacity, 1));
+}
+
+.peer:checked ~ .peer-checked\:text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity, 1));
+}
+
+.peer:checked ~ .peer-checked\:shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 640px) {
+  .sm\:inline-block {
+    display: inline-block;
+  }
+
+  .sm\:h-11 {
+    height: 2.75rem;
+  }
+
+  .sm\:h-8 {
+    height: 2rem;
+  }
+
+  .sm\:w-11 {
+    width: 2.75rem;
+  }
+
+  .sm\:w-8 {
+    width: 2rem;
+  }
+
+  .sm\:w-auto {
+    width: auto;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .sm\:gap-2\.5 {
+    gap: 0.625rem;
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .sm\:p-8 {
+    padding: 2rem;
+  }
+
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sm\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .sm\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .sm\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}</style></head>
+<body class="organic-wave min-h-screen flex flex-col">
+
+  <!-- NAVBAR FIJA INSTITUTO i3 -->
+  <header class="sticky top-0 z-50 bg-purple-900 text-white shadow-xl border-b-4 border-yellow-400">
+    <div class="max-w-6xl mx-auto px-3 sm:px-4 py-2.5 sm:py-3 flex flex-wrap items-center justify-between gap-2 sm:gap-3">
+      <!-- Marca i3 -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white flex items-center justify-center shadow-md border-2 border-yellow-400 shrink-0">
+          <svg class="w-7 h-7 sm:w-8 sm:h-8 i3-spiral" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 8C18.745 8 8 18.745 8 32C8 43.2 15.67 52.61 26.05 55.26" stroke="#F97316" stroke-width="6" stroke-linecap="round"/>
+            <path d="M32 56C45.255 56 56 45.255 56 32C56 20.8 48.33 11.39 37.95 8.74" stroke="#06B6D4" stroke-width="6" stroke-linecap="round"/>
+            <path d="M20 32C20 25.373 25.373 20 32 20C38.627 20 44 25.373 44 32C44 38.627 38.627 44 32 44" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="32" cy="32" r="4.5" fill="#FACC15"/>
+          </svg>
+        </div>
+        <div>
+          <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
+            <span class="text-lg sm:text-xl font-black tracking-tight lowercase text-yellow-400">instituto i3</span>
+            <span class="hidden sm:inline-block text-[11px] font-extrabold uppercase tracking-wider bg-cyan-500 text-slate-950 px-2.5 py-0.5 rounded-full">inclusión • inflexión • impacto</span>
+          </div>
+          <p class="text-[11px] sm:text-sm font-bold text-purple-100">Módulo 2: Estructurar Perfiles 2 • Sesión 5</p>
+        </div>
+      </div>
+
+      <!-- Barra de Herramientas y Respaldo -->
+      <div class="flex flex-wrap items-center gap-1.5 sm:gap-2.5">
+        <div id="autosave-badge" class="flex items-center gap-1.5 bg-purple-800 border border-purple-600 px-2.5 py-1.5 rounded-xl text-[11px] sm:text-xs font-bold text-lime-300">
+          <span class="w-2 h-2 rounded-full bg-lime-400 animate-pulse"></span>
+          <span id="autosave-text">Guardado local listo</span>
+        </div>
+
+        <button type="button" onclick="downloadBackup()" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-extrabold text-[11px] sm:text-xs px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl shadow transition cursor-pointer flex items-center gap-1">
+          <span>⬇ Respaldo JSON ▶</span>
+        </button>
+
+        <label class="bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-extrabold text-[11px] sm:text-xs px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl shadow transition cursor-pointer flex items-center gap-1">
+          <span>⬆ Cargar JSON ▶</span>
+          <input type="file" id="json-upload" accept=".json" class="hidden" onchange="handleFileUpload(event)" />
+        </label>
+      </div>
+    </div>
+
+    <!-- Barra de Progreso Global + Píldora Rápida de Competencias -->
+    <div class="bg-purple-950 px-3 sm:px-4 py-1.5">
+      <div class="max-w-6xl mx-auto flex items-center gap-2 sm:gap-3">
+        <span class="text-[11px] sm:text-xs font-extrabold text-yellow-300 whitespace-nowrap">Avance: <span id="progress-percent">0%</span></span>
+        <div class="w-full bg-purple-800 rounded-full h-2.5 overflow-hidden border border-purple-600">
+          <div id="progress-bar" class="bg-lime-400 h-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+        <span class="text-[11px] sm:text-xs font-black bg-purple-800 border border-purple-500 text-lime-300 px-2.5 py-0.5 rounded-full whitespace-nowrap">
+          Matriz: <span id="nav-comp-counter">0/13</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (COLOR BLOCKING AMARILLO i3) -->
+  <section class="bg-yellow-400 border-b-4 border-white py-7 sm:py-8 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+      <div class="lg:col-span-8 space-y-3">
+        <span class="inline-block bg-purple-800 text-white text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow">
+          Comité Evaluador • Escala Conductual 1 a 5
+        </span>
+        <h1 class="text-2xl sm:text-4xl font-black text-slate-950 leading-tight">
+          Laboratorio de Evaluación Conductual: Del Comportamiento a la Brecha
+        </h1>
+        <p class="text-sm sm:text-lg font-bold text-slate-900 leading-relaxed">
+          En un proceso de selección real, no calificamos por "caer bien" ni por suposiciones: observamos hechos concretos. En este laboratorio van a analizar a un candidato dentro de un recurso audiovisual (como la película <em>El Método</em> u otro caso asignado), calificarán <span class="bg-white px-2 py-0.5 rounded-lg font-black text-purple-900">13 competencias transversales del 1 al 5</span> leyendo explícitamente cada descriptor para evitar sesgos, y al final el sistema revelará la distancia frente al perfil exigido por el cargo.
+        </p>
+      </div>
+
+      <!-- Mascota Brote/Llama i3 Sticker 3D -->
+      <div class="lg:col-span-4 flex justify-center">
+        <div class="sticker-card bg-white p-4 flex flex-wrap items-center justify-center gap-4 max-w-sm w-full">
+          <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-purple-700 via-pink-500 to-yellow-400 flex items-center justify-center shrink-0 border-2 border-slate-900 shadow-inner">
+            <svg class="w-14 h-14" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40 10C28 24 22 36 22 48C22 59 30 68 40 68C50 68 58 59 58 48C58 36 52 24 40 10Z" fill="#84CC16" stroke="#0F172A" stroke-width="3.5"/>
+              <path d="M40 22C34 31 30 39 30 47C30 54 34.5 60 40 60C45.5 60 50 54 50 47C50 39 46 31 40 22Z" fill="#FACC15"/>
+              <circle cx="34" cy="45" r="3.5" fill="#0F172A"/>
+              <circle cx="46" cy="45" r="3.5" fill="#0F172A"/>
+              <circle cx="35" cy="44" r="1.2" fill="#FFFFFF"/>
+              <circle cx="47" cy="44" r="1.2" fill="#FFFFFF"/>
+              <path d="M35 52C37 55 43 55 45 52" stroke="#0F172A" stroke-width="3" stroke-linecap="round"/>
+              <rect x="49" y="45" width="18" height="22" rx="3" fill="#06B6D4" stroke="#0F172A" stroke-width="3"/>
+              <path d="M53 55L57 59L64 51" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <span class="text-xs font-black uppercase text-pink-600">Evaluación Sin Sesgo i3</span>
+            <p class="text-xs sm:text-sm font-extrabold text-slate-900 leading-snug">
+              "Lee los 5 niveles de cada competencia antes de elegir tu nota; solo al final destaparemos el perfil esperado del puesto."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="max-w-6xl mx-auto px-4 py-8 space-y-10 flex-grow">
+
+    <!-- GUÍA RÁPIDA PASO A PASO -->
+    <section class="sticker-card bg-white p-6">
+      <div class="flex flex-wrap items-center gap-2 mb-4">
+        <span class="bg-pink-500 text-white text-xs font-black uppercase px-3 py-1 rounded-full">Ruta de Trabajo Autónomo</span>
+        <h2 class="text-lg sm:text-xl font-black text-slate-900">¿Cómo completar este Laboratorio en 4 pasos?</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-orange-50 border-2 border-orange-400 rounded-2xl p-4">
+          <div class="w-8 h-8 rounded-xl bg-orange-500 text-white font-black flex items-center justify-center mb-2">1</div>
+          <h3 class="font-black text-slate-900 text-sm">Paso 1: Identificación y Caso</h3>
+          <p class="text-xs font-semibold text-slate-700 mt-1">Registren su equipo, el recurso audiovisual analizado, el nombre libre del evaluado y el perfil profesional que proyecta.</p>
+        </div>
+        <div class="bg-cyan-50 border-2 border-cyan-400 rounded-2xl p-4">
+          <div class="w-8 h-8 rounded-xl bg-cyan-500 text-white font-black flex items-center justify-center mb-2">2</div>
+          <h3 class="font-black text-slate-900 text-sm">Paso 2: Evaluación Ciega 1 a 5</h3>
+          <p class="text-xs font-semibold text-slate-700 mt-1">Revisen el ejemplo guía de <em>Julio</em>. Lean los descriptores visibles del 1 al 5 en las 13 competencias (<code>a</code> a <code>m</code>) y escriban la escena exacta que respalda cada nota.</p>
+        </div>
+        <div class="bg-purple-50 border-2 border-purple-400 rounded-2xl p-4">
+          <div class="w-8 h-8 rounded-xl bg-purple-700 text-white font-black flex items-center justify-center mb-2">3</div>
+          <h3 class="font-black text-slate-900 text-sm">Paso 3: Brechas y Dictamen</h3>
+          <p class="text-xs font-semibold text-slate-700 mt-1">Presionen <strong>"Revelar Perfil del Cargo y Calcular Brechas ▶"</strong>, revisen el semáforo de distancias y redacten su dictamen y plan de desarrollo.</p>
+        </div>
+        <div class="bg-lime-50 border-2 border-lime-500 rounded-2xl p-4">
+          <div class="w-8 h-8 rounded-xl bg-lime-400 text-slate-950 font-black flex items-center justify-center mb-2">4</div>
+          <h3 class="font-black text-slate-900 text-sm">Paso 4: Envío y Evidencia PDF</h3>
+          <p class="text-xs font-semibold text-slate-700 mt-1">Hagan clic en <strong>"Enviar Trabajo a Google Sheets ▶"</strong> y luego descarguen su reporte limpio en PDF para subirlo a la plataforma.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 0: REGISTRO DE EQUIPO Y RECURSO EVALUADO (CAMPOS ABIERTOS) -->
+    <section id="sec-0" class="sticker-card bg-purple-900 text-white p-6 sm:p-8">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-6">
+        <div>
+          <span class="bg-lime-400 text-slate-950 text-xs font-black uppercase px-3 py-1 rounded-full">Sección 0 • Registro de Equipo y Caso</span>
+          <h2 class="text-xl sm:text-2xl font-black mt-2">Datos del Comité Evaluador y del Candidato Analizado</h2>
+        </div>
+        <span class="text-xs font-bold bg-purple-800 border border-purple-500 px-3 py-1.5 rounded-xl text-yellow-300">
+          Siguiente: Ejemplo Guía y 13 Competencias ▶
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div>
+          <label for="input-actividad-id" class="block text-xs font-extrabold uppercase tracking-wider text-yellow-300 mb-1.5">
+            ID de Actividad (Fijo)
+          </label>
+          <input type="text" id="input-actividad-id" name="actividad_id" value="I3perfiles2_ACT05" readonly
+            class="w-full px-3.5 py-2.5 rounded-xl bg-purple-950 text-lime-300 font-black border-2 border-purple-600 opacity-85 cursor-not-allowed text-sm" />
+        </div>
+
+        <div>
+          <label for="input-materia" class="block text-xs font-extrabold uppercase tracking-wider text-yellow-300 mb-1.5">
+            Programa / Módulo (Fijo)
+          </label>
+          <input type="text" id="input-materia" name="materia" value="Estructurar Perfiles 2 - Instituto i3" data-track="true" readonly
+            class="w-full px-3.5 py-2.5 rounded-xl bg-purple-950 text-lime-300 font-black border-2 border-purple-600 opacity-85 cursor-not-allowed text-sm" />
+        </div>
+
+        <div>
+          <label for="input-grupo" class="block text-xs font-extrabold uppercase tracking-wider text-yellow-300 mb-1.5">
+            Número de Equipo / Grupo *
+          </label>
+          <input type="text" id="input-grupo" name="grupo" data-track="true"
+            placeholder="Ej. Equipo 2 - Jornada Sábado"
+            class="w-full px-3.5 py-2.5 rounded-xl bg-white text-slate-900 font-bold border-2 border-purple-400 text-sm" />
+        </div>
+
+        <div>
+          <label for="input-fecha" class="block text-xs font-extrabold uppercase tracking-wider text-yellow-300 mb-1.5">
+            Fecha de Evaluación
+          </label>
+          <input type="date" id="input-fecha" name="fecha"
+            class="w-full px-3.5 py-2.5 rounded-xl bg-white text-slate-900 font-bold border-2 border-purple-400 text-sm" />
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-4">
+          <label for="input-participantes" class="block text-xs font-extrabold uppercase tracking-wider text-yellow-300 mb-1.5">
+            Nombres Completos de los Integrantes del Equipo *
+          </label>
+          <input type="text" id="input-participantes" name="participantes" data-track="true"
+            placeholder="Escribe aquí los nombres completos de todos los integrantes del comité evaluador..."
+            class="w-full px-3.5 py-2.5 rounded-xl bg-white text-slate-900 font-bold border-2 border-purple-400 text-sm" />
+        </div>
+      </div>
+
+      <!-- SUB-BLOQUE: CAMPOS ABIERTOS DEL EVALUADO -->
+      <div class="bg-purple-950/80 border-2 border-cyan-400 rounded-2xl p-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label for="input-recurso" class="block text-xs font-extrabold uppercase tracking-wider text-cyan-300 mb-1.5">
+            Recurso audiovisual o caso analizado *
+          </label>
+          <input type="text" id="input-recurso" name="recurso" data-track="true"
+            placeholder="Ej. Película El Método (2005) / Entrevista de caso"
+            class="w-full px-3.5 py-2.5 rounded-xl bg-white text-slate-900 font-bold border-2 border-cyan-400 text-sm" />
+        </div>
+
+        <div>
+          <label for="input-evaluado" class="block text-xs font-extrabold uppercase tracking-wider text-cyan-300 mb-1.5">
+            Nombre del candidato o personaje evaluado *
+          </label>
+          <input type="text" id="input-evaluado" name="evaluado" data-track="true"
+            placeholder="Escribe el nombre del evaluado (ej. Nieves, Enrique, Fernando, Carlos, Ana, Ricardo u otro)..."
+            class="w-full px-3.5 py-2.5 rounded-xl bg-white text-slate-900 font-bold border-2 border-cyan-400 text-sm" />
+        </div>
+
+        <div class="md:col-span-2">
+          <label for="input-perfil-evaluado" class="block text-xs font-extrabold uppercase tracking-wider text-cyan-300 mb-1.5">
+            Perfil profesional / cargo al que aspira el evaluado *
+          </label>
+          <textarea id="input-perfil-evaluado" name="perfil_evaluado" rows="2" data-track="true"
+            placeholder="Describe brevemente la formación, experiencia o rol que proyecta el candidato..."
+            class="w-full px-3.5 py-2.5 rounded-xl bg-white text-slate-900 font-semibold border-2 border-cyan-400 text-sm"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL DESPLEGABLE DE REFERENCIA: EJEMPLO GUÍA CASO JULIO -->
+    <section class="sticker-card bg-cyan-500 p-5 sm:p-6 text-slate-950">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <span class="bg-purple-900 text-yellow-400 text-xs font-black uppercase px-3 py-1 rounded-full">Muestra de Calibración</span>
+          <h2 class="text-lg sm:text-xl font-black text-white drop-shadow">¿Dudas sobre cómo redactar la evidencia conductual?</h2>
+        </div>
+        <button type="button" id="btn-toggle-julio" onclick="toggleJulioGuide()"
+          class="bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-black text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow border-2 border-slate-950 transition cursor-pointer">
+          👁️ Ver Ejemplo Guía: Caso Julio ▶
+        </button>
+      </div>
+
+      <div id="julio-guide-panel" class="hidden mt-5 bg-white rounded-2xl p-5 border-4 border-purple-900 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b-2 border-slate-200 pb-3">
+          <div>
+            <h3 class="text-base sm:text-lg font-black text-purple-900">Caso Modelo de Referencia: Candidato Julio (Película <em>El Método</em>)</h3>
+            <p class="text-xs font-bold text-slate-600">Observa cómo una acción o escena específica justifica la nota asignada en la escala de 1 a 5 (no copies este personaje; evalúa uno distinto).</p>
+          </div>
+          <span class="bg-lime-400 text-slate-950 text-xs font-black px-3 py-1 rounded-full">Escala: 1 Insuficiente → 5 Superlativo</span>
+        </div>
+
+        <div class="overflow-x-auto rounded-xl border border-slate-300">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm">
+            <thead>
+              <tr class="bg-purple-900 text-white">
+                <th class="p-3 font-black">Competencia</th>
+                <th class="p-3 font-black">Nota Asignada</th>
+                <th class="p-3 font-black">Evidencia Conductual Observada en Escena</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 font-semibold text-slate-800">
+              <tr class="bg-slate-50">
+                <td class="p-3 font-extrabold text-purple-900">c. Colaboración</td>
+                <td class="p-3"><span class="bg-lime-400 text-slate-950 font-black px-2.5 py-0.5 rounded-lg">5 (Superlativo)</span></td>
+                <td class="p-3">En la prueba inicial para descubrir al infiltrado, propone un método de verificación grupal que beneficia a todos los participantes y no solo a su interés individual.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-extrabold text-purple-900">i. Tolerancia a la presión</td>
+                <td class="p-3"><span class="bg-yellow-300 text-slate-950 font-black px-2.5 py-0.5 rounded-lg">3 (Promedio)</span></td>
+                <td class="p-3">Cuando el grupo lo cuestiona por su historial laboral, adopta una postura defensiva inmediata, muestra tensión física y pierde fluidez para articular sus argumentos.</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="p-3 font-extrabold text-purple-900">j. Toma de decisiones</td>
+                <td class="p-3"><span class="bg-lime-400 text-slate-950 font-black px-2.5 py-0.5 rounded-lg">5 (Superlativo)</span></td>
+                <td class="p-3">Sustenta su decisión previa de denunciar irregularidades ambientales en hechos documentados y criterios normativos claros, asumiendo las consecuencias con coherencia.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 1: MATRIZ DE EVALUACIÓN CONDUCTUAL CIEGA (13 COMPETENCIAS: a - m) -->
+    <section id="sec-1" class="space-y-6">
+      <div class="sticker-card bg-orange-500 p-6 text-white">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <span class="bg-slate-950 text-yellow-400 text-xs font-black uppercase px-3 py-1 rounded-full">Sección 1 • Evaluación Ciega Sin Sesgo</span>
+            <h2 class="text-2xl sm:text-3xl font-black mt-2">Matriz de 13 Competencias Transversales (Escala 1 a 5)</h2>
+            <p class="text-xs sm:text-sm font-bold text-orange-50 mt-1">
+              El perfil esperado del puesto está <strong>oculto</strong> durante esta fase. Lee explícitamente los 5 descriptores de cada competencia, selecciona el nivel observado (<strong>1</strong> a <strong>5</strong>) y escribe obligatoriamente una evidencia conductual concreta (mínimo 15 caracteres reales y 3 palabras distintas, sin relleno) en las 13 competencias.
+            </p>
+          </div>
+          <div class="bg-purple-950 text-yellow-300 px-4 py-2.5 rounded-2xl border-2 border-yellow-400 text-center max-w-full">
+            <div class="text-xs font-extrabold uppercase">Competencias Calibradas</div>
+            <div id="comp-counter" class="text-2xl font-black text-lime-400">0 / 13</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenedor dinámico de las 13 tarjetas organizadas en 2 bloques -->
+      <div id="competencies-container" class="space-y-6"></div>
+    </section>
+
+    <!-- SECCIÓN 2: REVELACIÓN DE BRECHAS Y SEMÁFORO VISUAL -->
+    <section id="sec-2" class="sticker-card bg-purple-800 p-6 sm:p-8 text-white">
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+        <div>
+          <span class="bg-yellow-400 text-slate-950 text-xs font-black uppercase px-3 py-1 rounded-full">Sección 2 • Contraste con el Perfil del Cargo</span>
+          <h2 class="text-2xl sm:text-3xl font-black mt-2">Revelación de Brechas y Semáforo de Resultados</h2>
+          <p class="text-xs sm:text-sm font-bold text-purple-100 mt-1">
+            Al completar las 13 competencias con su evidencia conductual, presiona el botón para destapar el nivel esperado por el cargo y calcular las distancias (<code>Distancia = Nivel Inicial - Nivel Evaluado</code>).
+          </p>
+        </div>
+
+        <button type="button" id="btn-reveal-gaps" onclick="revealGaps()" disabled
+          class="bg-slate-400 text-slate-700 font-black text-sm sm:text-base py-3.5 px-6 rounded-xl shadow border-2 border-slate-500 cursor-not-allowed transition-all">
+          🔒 Completa las 13 competencias para revelar brechas (0/13) ▶
+        </button>
+      </div>
+
+      <!-- Panel Oculto de Resultados Destapados -->
+      <div id="gaps-results-panel" class="hidden mt-6 bg-white text-slate-900 rounded-2xl p-5 sm:p-6 border-4 border-lime-400 space-y-6">
+        <!-- Tarjetas de Promedios -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="bg-purple-50 border-2 border-purple-700 rounded-2xl p-4 text-center">
+            <span class="text-xs font-black uppercase text-purple-800">Promedio del Evaluado</span>
+            <div id="stat-avg-cand" class="text-3xl font-black text-purple-950 mt-1">0.00</div>
+            <span class="text-xs font-bold text-slate-600">Sobre escala máxima de 5.0</span>
+          </div>
+          <div class="bg-cyan-50 border-2 border-cyan-600 rounded-2xl p-4 text-center">
+            <span class="text-xs font-black uppercase text-cyan-900">Promedio de Brecha (Distancia)</span>
+            <div id="stat-avg-gap" class="text-3xl font-black text-slate-950 mt-1">0.00</div>
+            <span class="text-xs font-bold text-slate-600">≤ 0 cumple/supera | &gt; 0 brecha</span>
+          </div>
+          <div class="bg-amber-50 border-2 border-amber-500 rounded-2xl p-4 text-center">
+            <span class="text-xs font-black uppercase text-amber-900">Alertas de Brecha</span>
+            <div id="stat-alerts" class="text-lg font-black text-slate-950 mt-2">0 Críticas • 0 Leves</div>
+            <span class="text-xs font-bold text-slate-600">Semáforo Rojo / Amarillo</span>
+          </div>
+        </div>
+
+        <!-- Leyenda Semáforo -->
+        <div class="flex flex-wrap items-center gap-3 text-xs font-extrabold bg-slate-100 p-3 rounded-xl border border-slate-300">
+          <span class="px-2.5 py-1 rounded-lg bg-lime-200 text-lime-950 border border-lime-500">🟢 Verde (Distancia ≤ 0): Cumple o supera el perfil</span>
+          <span class="px-2.5 py-1 rounded-lg bg-yellow-200 text-yellow-950 border border-yellow-500">🟡 Amarillo (Distancia = +1): Brecha leve (entrenamiento puntual)</span>
+          <span class="px-2.5 py-1 rounded-lg bg-pink-200 text-pink-950 border border-pink-500">🔴 Rojo (Distancia ≥ +2): Brecha crítica frente al cargo</span>
+        </div>
+
+        <!-- Tabla Comparativa Completa -->
+        <div class="overflow-x-auto rounded-xl border-2 border-slate-300">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm">
+            <thead>
+              <tr class="bg-purple-900 text-white">
+                <th class="p-3 font-black">Ítem</th>
+                <th class="p-3 font-black">Competencia</th>
+                <th class="p-3 font-black text-center">Nivel Inicial (Cargo)</th>
+                <th class="p-3 font-black text-center">Nivel Evaluado</th>
+                <th class="p-3 font-black text-center">Distancia</th>
+                <th class="p-3 font-black">Estado Semáforo</th>
+              </tr>
+            </thead>
+            <tbody id="gaps-table-body" class="divide-y divide-slate-200 font-bold"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: DICTAMEN FINAL Y PLAN DE DESARROLLO -->
+    <section id="sec-3" class="sticker-card bg-pink-500 p-6 sm:p-8 text-white">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+        <div>
+          <span class="bg-slate-950 text-lime-400 text-xs font-black uppercase px-3 py-1 rounded-full">Sección 3 • Síntesis y Toma de Decisión</span>
+          <h2 class="text-2xl sm:text-3xl font-black mt-2">Dictamen Final y Plan de Desarrollo</h2>
+        </div>
+        <span class="text-xs font-extrabold bg-pink-700 border border-white/40 px-3 py-1.5 rounded-xl">
+          Siguiente: Rúbrica y Envío Oficial ▶
+        </span>
+      </div>
+
+      <div class="space-y-5">
+        <div class="bg-white text-slate-900 rounded-2xl p-5 border-4 border-yellow-300">
+          <label for="dictamen-final" class="block text-sm sm:text-base font-black text-purple-900 mb-2">
+            1. Dictamen del Comité Evaluador: Con base en las evidencias observadas y las brechas calculadas, ¿recomiendan contratar o descartar a este candidato y por qué? *
+          </label>
+          <textarea id="dictamen-final" name="dictamen_final" rows="3" data-track="true"
+            placeholder="Argumenta el veredicto del comité citando fortalezas clave y brechas críticas detectadas..."
+            class="w-full p-3.5 rounded-xl border-2 border-slate-300 text-sm font-semibold text-slate-800"></textarea>
+        </div>
+
+        <div class="bg-white text-slate-900 rounded-2xl p-5 border-4 border-cyan-400">
+          <label for="plan-desarrollo" class="block text-sm sm:text-base font-black text-purple-900 mb-2">
+            2. Plan de Cierre de Brechas: Si este candidato ingresara a la empresa, ¿qué brecha específica priorizarían para capacitar y qué acción práctica implementarían? *
+          </label>
+          <textarea id="plan-desarrollo" name="plan_desarrollo" rows="3" data-track="true"
+            placeholder="Indica la competencia con mayor brecha, el objetivo de mejora y la acción concreta de entrenamiento o acompañamiento..."
+            class="w-full p-3.5 rounded-xl border-2 border-slate-300 text-sm font-semibold text-slate-800"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: RÚBRICA DE EVALUACIÓN Y ZONA DE ENTREGA (DOBLE CANDADO) -->
+    <section id="sec-4" class="sticker-card bg-white p-6 sm:p-8 border-4 border-purple-800">
+      <div class="mb-6">
+        <span class="bg-lime-400 text-slate-950 text-xs font-black uppercase px-3 py-1 rounded-full">Cierre y Entrega Oficial • Criterios de Éxito</span>
+        <h2 class="text-2xl font-black text-slate-900 mt-2">Rúbrica de Evaluación del Laboratorio</h2>
+        <p class="text-sm font-semibold text-slate-700 mt-1">
+          Cada uno de los 5 ítems se puntuará individualmente en la escala de 1 a 5. Tu nota final será el promedio simple de estos 5 resultados.
+        </p>
+      </div>
+
+      <!-- Tabla Íntegra de 5 Criterios -->
+      <div class="overflow-x-auto mb-8 rounded-2xl border-2 border-slate-300">
+        <table class="w-full text-left border-collapse text-xs sm:text-sm">
+          <thead>
+            <tr class="bg-purple-900 text-white">
+              <th class="p-3 font-black">#</th>
+              <th class="p-3 font-black">Criterio Evaluado</th>
+              <th class="p-3 font-black">Excelente (4.5 - 5.0)</th>
+              <th class="p-3 font-black">Bueno (4.0 - 4.4)</th>
+              <th class="p-3 font-black">Regular (3.0 - 3.9)</th>
+              <th class="p-3 font-black">Bajo (1.0 - 2.9)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 font-semibold text-slate-800">
+            <tr class="bg-slate-50">
+              <td class="p-3 font-black text-purple-900">1</td>
+              <td class="p-3 font-extrabold">Identificación del Caso y Perfil del Evaluado</td>
+              <td class="p-3">Registra con claridad el recurso audiovisual, el nombre del evaluado y describe de forma completa su perfil profesional observado.</td>
+              <td class="p-3">Registra el recurso y el evaluado, pero describe su perfil profesional de forma general.</td>
+              <td class="p-3">Identifica el evaluado con datos incompletos o poco claros sobre su perfil.</td>
+              <td class="p-3">Omite el recurso, el nombre del evaluado o deja información vacía.</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-black text-purple-900">2</td>
+              <td class="p-3 font-extrabold">Calibración Conductual (Competencias <code>a</code> a <code>g</code>)</td>
+              <td class="p-3">Asigna niveles coherentes (1 a 5) en las 7 competencias operativas respaldados con escenas o acciones literales verificables.</td>
+              <td class="p-3">Califica las 7 competencias con evidencias adecuadas, aunque 1 o 2 descripciones son breves.</td>
+              <td class="p-3">Califica las competencias pero varias evidencias son opiniones generales sin escena concreta.</td>
+              <td class="p-3">Asigna puntajes sin sustento conductual o deja evidencias de relleno.</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-black text-purple-900">3</td>
+              <td class="p-3 font-extrabold">Calibración Socioemocional (Competencias <code>h</code> a <code>m</code>)</td>
+              <td class="p-3">Asigna niveles coherentes (1 a 5) en las 6 competencias relacionales respaldados con conductas observables precisas.</td>
+              <td class="p-3">Califica las 6 competencias con evidencias pertinentes, con leve falta de detalle en 1 ítem.</td>
+              <td class="p-3">Presenta evidencias subjetivas ("se vio nervioso", "tiene buena actitud") en varios ítems.</td>
+              <td class="p-3">Califica al azar sin observar las conductas de la situación analizada.</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-black text-purple-900">4</td>
+              <td class="p-3 font-extrabold">Lectura de Brechas y Semáforo de Resultados</td>
+              <td class="p-3">Interpreta con rigor las distancias frente al perfil revelado, diferenciando fortalezas y brechas críticas (semáforo rojo/amarillo).</td>
+              <td class="p-3">Identifica correctamente las brechas principales, aunque su lectura de distancias es descriptiva.</td>
+              <td class="p-3">Menciona los resultados numéricos sin explicar qué significan las distancias frente al cargo.</td>
+              <td class="p-3">No completa la revelación de brechas o ignora las desviaciones obtenidas.</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3 font-black text-purple-900">5</td>
+              <td class="p-3 font-extrabold">Dictamen de Selección y Plan de Desarrollo</td>
+              <td class="p-3">Emite un veredicto sólido basado en evidencias y propone una acción práctica y realista para cerrar la brecha prioritaria.</td>
+              <td class="p-3">Emite un dictamen coherente y propone una capacitación pertinente pero algo general.</td>
+              <td class="p-3">El dictamen tiene poca relación con las brechas calculadas o la mejora propuesta es vaga.</td>
+              <td class="p-3">No redacta dictamen o emite una opinión personal sin respaldo técnico.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Zona de Botones con Doble Candado -->
+      <div class="bg-slate-100 rounded-2xl p-6 border-2 border-slate-300 flex flex-col items-center text-center space-y-4">
+        <div id="status-banner" class="hidden w-full max-w-2xl p-4 rounded-xl text-sm font-extrabold"></div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+          <!-- CANDADO 1: BOTÓN ENVIAR TRABAJO -->
+          <button type="button" id="btn-submit-sheets" onclick="submitToSheets()" disabled
+            class="w-full sm:w-auto bg-slate-300 text-slate-500 font-black text-sm sm:text-base py-3.5 px-7 rounded-xl shadow transition-all cursor-not-allowed flex items-center justify-center gap-2 border-2 border-slate-400">
+            <span id="submit-lock-icon">🔒</span>
+            <span id="submit-btn-text">Completa todos los campos y revela brechas para enviar ▶</span>
+          </button>
+
+          <!-- CANDADO 2: BOTÓN EXPORTAR PDF -->
+          <button type="button" id="btn-export-pdf" onclick="openPreview()" disabled
+            class="w-full sm:w-auto bg-slate-300 text-slate-500 font-black text-sm sm:text-base py-3.5 px-7 rounded-xl shadow transition-all cursor-not-allowed flex items-center justify-center gap-2 border-2 border-slate-400">
+            <span id="pdf-lock-icon">🔒</span>
+            <span id="pdf-btn-text">Exportar a PDF / Imprimir (Envía primero) ▶</span>
+          </button>
+        </div>
+
+        <p class="text-xs font-bold text-slate-600 max-w-2xl">
+          <strong>Flujo Obligatorio:</strong> 1) Completa los datos del caso y las 13 competencias con evidencia real. 2) Revela el perfil del cargo y redacta el dictamen y plan de desarrollo. 3) Haz clic en <em>"Enviar Trabajo a Google Sheets ▶"</em> para registrar la entrega y desbloquear la descarga del PDF.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="bg-purple-950 text-purple-200 py-5 px-4 text-center text-xs font-bold border-t-4 border-yellow-400">
+    <p>Instituto i3 • inclusión • inflexión • impacto | Módulo 2: Estructurar Perfiles 2 (Sesión 5)</p>
+  </footer>
+
+  <!-- BOTÓN SCROLL TO TOP -->
+  <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Volver arriba"
+    class="fixed bottom-5 right-5 z-40 w-11 h-11 rounded-full bg-white text-purple-900 border-4 border-purple-800 shadow-xl flex items-center justify-center font-black text-base hover:bg-yellow-400 transition cursor-pointer">
+    ▲
+  </button>
+
+  <script>
+    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbykP5mOpfvgjO-R3aMf2t8tzAg-nc5Tc2cpVmtpRh33C-ZwYUW9G9-CWr-bq7zVEv5s/exec";
+    const STORAGE_KEY = "i3_taller_I3perfiles2_ACT05_v1";
+
+    const COMPETENCIES_DATA = [
+      {
+        id: "a",
+        bloque: "A",
+        nombre: "Atención al detalle",
+        nivelInicial: 5,
+        escala: "Maneja datos con minuciosidad, categoriza volúmenes densos de información y verifica detalles clave con método y orden.",
+        niveles: {
+          5: "Superlativo: Es minucioso en grado sumo al revisar información densa o compleja, detectando detalles críticos sin omisiones.",
+          4: "Eficiente: Categoriza apropiadamente la información clave y discrimina con precisión lo relevante de lo accesorio.",
+          3: "Promedio: Analiza y procesa detalles dentro de volúmenes de datos conforme a los requerimientos habituales.",
+          2: "Por debajo de lo esperado: Hace esfuerzo por cuidar detalles, pero tiende a abrumarse o dispersarse ante información compleja.",
+          1: "Insuficiente: Poco minucioso; deja pasar aspectos fundamentales que afectan la calidad del resultado."
+        }
+      },
+      {
+        id: "b",
+        bloque: "A",
+        nombre: "Autoaprendizaje",
+        nivelInicial: 5,
+        escala: "Busca actualización técnica por iniciativa propia, incorpora nuevos métodos a su gestión y comparte lecciones aprendidas.",
+        niveles: {
+          5: "Superlativo: Se mantiene en actualización constante, aplicando conceptos y métodos innovadores que mejoran su gestión y la de otros.",
+          4: "Eficiente: Se muestra abierto a cultivarse y busca valor en nuevas herramientas o técnicas para perfeccionar su trabajo.",
+          3: "Promedio: Cumple con las actualizaciones requeridas por el cargo sin ir necesariamente más allá de lo solicitado.",
+          2: "Por debajo de lo esperado: Muestra actitud conformista y raras veces gestiona por cuenta propia su actualización.",
+          1: "Insuficiente: Renuente al aprendizaje autónomo; se muestra apático frente a la mejora de sus conocimientos."
+        }
+      },
+      {
+        id: "c",
+        bloque: "A",
+        nombre: "Colaboración",
+        nivelInicial: 3,
+        escala: "Está atento al flujo de actividades para apoyar a otros oportunamente y aporta esfuerzo extra cuando el equipo lo requiere.",
+        niveles: {
+          5: "Superlativo: Ejecuta acciones de apoyo desinteresado, aportando el esfuerzo necesario para lograr calidad y cumplimiento grupal.",
+          4: "Eficiente: Aporta colaboración dentro y fuera de su área, generando impacto positivo en las metas comunes.",
+          3: "Promedio: Colabora cuando se le solicita y responde conforme a lo requerido por el equipo.",
+          2: "Por debajo de lo esperado: Requiere recordatorios o insistencia para integrarse y apoyar a sus compañeros.",
+          1: "Insuficiente: Renuente a colaborar; busca excusas o justificaciones para evadir el apoyo al grupo."
+        }
+      },
+      {
+        id: "d",
+        bloque: "A",
+        nombre: "Cumplimiento de normas",
+        nivelInicial: 4,
+        escala: "Acata las políticas organizacionales con disciplina, contrasta sus acciones con las reglas vigentes y previene desviaciones.",
+        niveles: {
+          5: "Superlativo: Se involucra de lleno en el acatamiento de las normas, orientando e induciendo en los demás su cumplimiento efectivo.",
+          4: "Eficiente: Acepta las normas organizacionales con disciplina y aporta lo necesario para que se respeten en su entorno.",
+          3: "Promedio: Cumple con las normativas establecidas según lo dispuesto para su rol.",
+          2: "Por debajo de lo esperado: Hace esfuerzo por acatar las reglas, pero falla en sostener su cumplimiento completo.",
+          1: "Insuficiente: Apático o indiferente frente a la observancia y aplicación de las normas establecidas."
+        }
+      },
+      {
+        id: "e",
+        bloque: "A",
+        nombre: "Destreza comunicativa",
+        nivelInicial: 5,
+        escala: "Transmite información formal con claridad, disemina mensajes oportunamente, aclara dudas y verifica la comprensión.",
+        niveles: {
+          5: "Superlativo: Demuestra dominio comunicativo en distintos escenarios, logrando claridad y persuasión en sus intervenciones.",
+          4: "Eficiente: Se expresa con orden y claridad suficientes para captar la atención y asegurar comprensión.",
+          3: "Promedio: Mantiene una comunicación fluida y comprensible en las interacciones cotidianas.",
+          2: "Por debajo de lo esperado: Sus exposiciones carecen de estructura clara y sus mensajes tienden a resultar ambiguos.",
+          1: "Insuficiente: Falla de manera contundente en la transmisión de ideas, generando confusión en los receptores."
+        }
+      },
+      {
+        id: "f",
+        bloque: "A",
+        nombre: "Ejecutividad",
+        nivelInicial: 4,
+        escala: "Ejecuta asignaciones en los tiempos y estándares definidos, impulsando resultados concretos dentro de las políticas.",
+        niveles: {
+          5: "Superlativo: Realiza asignaciones clave con gran acierto y apego a lineamientos, superando expectativas cuando es necesario.",
+          4: "Eficiente: Cumple oportunamente con las tareas relevantes asignadas, sirviendo de referente operativo para otros.",
+          3: "Promedio: Cumple con las expectativas básicas de ejecución, aunque requiere seguimiento o estímulo para mantener el ritmo.",
+          2: "Por debajo de lo esperado: En momentos críticos pierde enfoque y falla en ejecutar conforme a los lineamientos.",
+          1: "Insuficiente: Se muestra falto de acción y errático frente a las tareas y plazos requeridos."
+        }
+      },
+      {
+        id: "g",
+        bloque: "A",
+        nombre: "Planificación y organización",
+        nivelInicial: 5,
+        escala: "Estructura procesos de trabajo, optimiza recursos, lleva trazabilidad y realiza ajustes oportunos ante desviaciones.",
+        niveles: {
+          5: "Superlativo: Planifica y organiza procesos complejos optimizando recursos de alto impacto con total trazabilidad.",
+          4: "Eficiente: Estructura sus procesos de trabajo con método, cuidando el uso adecuado de los recursos asignados.",
+          3: "Promedio: Cumple con la planificación y organización ordinaria de sus tareas conforme a lo establecido.",
+          2: "Por debajo de lo esperado: Intenta organizar sus actividades, pero omite puntos de control importantes.",
+          1: "Insuficiente: No planifica ni organiza sus procesos, actuando de manera improvisada."
+        }
+      },
+      {
+        id: "h",
+        bloque: "B",
+        nombre: "Tolerancia a la frustración",
+        nivelInicial: 4,
+        escala: "Reacciona de forma constructiva ante adversidades, afronta condiciones límite y replantea acciones tras un revés.",
+        niveles: {
+          5: "Superlativo: Reacciona de manera constructiva y propositiva ante resultados adversos, redefiniendo estrategias con madurez.",
+          4: "Eficiente: Mantiene buen temple y disposición anímica para asumir nuevos desafíos pese a los contratiempos.",
+          3: "Promedio: Se comporta de manera adecuada frente a la frustración sin que esta le impida continuar.",
+          2: "Por debajo de lo esperado: Tiende a desanimarse visiblemente cuando los resultados no salen según lo previsto.",
+          1: "Insuficiente: Se desploma anímica o emocionalmente ante situaciones adversas o fallos."
+        }
+      },
+      {
+        id: "i",
+        bloque: "B",
+        nombre: "Tolerancia a la presión",
+        nivelInicial: 4,
+        escala: "Mantiene calma, cordialidad y calidad de respuesta bajo altas exigencias, reclamos o plazos críticos.",
+        niveles: {
+          5: "Superlativo: Mantiene calma y buen ánimo sin importar la presión externa o interna, preservando la calidad del desempeño.",
+          4: "Eficiente: Gestiona sus emociones ante situaciones demandantes y responde de forma serena y adecuada.",
+          3: "Promedio: Cumple con el trabajo y saca adelante las tareas a pesar de las presiones del entorno.",
+          2: "Por debajo de lo esperado: Tiende a exasperarse cuando aumenta la presión, afectando la calidad de sus respuestas.",
+          1: "Insuficiente: Muestra muy baja tolerancia a la presión, incurriendo en bloqueos o errores frecuentes."
+        }
+      },
+      {
+        id: "j",
+        bloque: "B",
+        nombre: "Toma de decisiones",
+        nivelInicial: 5,
+        escala: "Analiza opciones racionalmente, decide con oportunidad y respaldo normativo agregando valor a la organización.",
+        niveles: {
+          5: "Superlativo: Toma decisiones fundamentadas y respaldadas en el análisis racional de múltiples variables y alternativas.",
+          4: "Eficiente: Responde oportunamente ante requerimientos de decisión considerando datos y variables relevantes.",
+          3: "Promedio: Analiza la información disponible y adopta decisiones confiables en situaciones habituales.",
+          2: "Por debajo de lo esperado: Revisa datos pero pierde enfoque en el análisis, afectando la calidad de la decisión final.",
+          1: "Insuficiente: Se muestra indeciso o toma determinaciones impulsivas sin sustento."
+        }
+      },
+      {
+        id: "k",
+        bloque: "B",
+        nombre: "Trabajo en equipo",
+        nivelInicial: 3,
+        escala: "Se integra a decisiones grupales, asume su rol con propiedad, fortalece la cohesión y acepta crítica constructiva.",
+        niveles: {
+          5: "Superlativo: Crea ambientes propicios para la cooperación, modelando cohesión y mejora continua en el grupo.",
+          4: "Eficiente: Se integra activamente a decisiones grupales articulando esfuerzos para lograr mejoras conjuntas.",
+          3: "Promedio: Asume con propiedad el rol asignado en el equipo aportando ideas útiles.",
+          2: "Por debajo de lo esperado: Participa parcialmente, pero tiende a desvincularse de la cohesión del grupo.",
+          1: "Insuficiente: Dificulta el ambiente grupal y no logra integrarse a dinámicas colaborativas."
+        }
+      },
+      {
+        id: "l",
+        bloque: "B",
+        nombre: "Sensibilidad",
+        nivelInicial: 3,
+        escala: "",
+        niveles: {
+          5: "Superlativo: Brinda apoyo efectivo y desinteresado donde los demás tienen dificultades, mediante consejo o ayuda oportuna.",
+          4: "Eficiente: Aporta apoyo mediante asesoría o ayuda cuando surgen dificultades y las circunstancias lo demandan.",
+          3: "Promedio: Se involucra ayudando a otros en algunos casos, mostrando disposición variable según el contexto.",
+          2: "Por debajo de lo esperado: Deja pasar por alto oportunidades evidentes de brindar apoyo a otros.",
+          1: "Insuficiente: Se muestra apático o indiferente ante las dificultades o necesidades de los demás."
+        }
+      },
+      {
+        id: "m",
+        bloque: "B",
+        nombre: "Sentido de pertenencia",
+        nivelInicial: 5,
+        escala: "",
+        niveles: {
+          5: "Superlativo: Su participación es constructiva y crea oportunidades para el desarrollo propio y del equipo, cuidando la organización como propia.",
+          4: "Eficiente: Orienta su participación al logro de objetivos con firme compromiso y cuidado por el entorno laboral.",
+          3: "Promedio: Se identifica con los objetivos y muestra disposición suficiente para atender los requerimientos de su área.",
+          2: "Por debajo de lo esperado: Tiene actitud favorable, pero le falta mayor esfuerzo concreto en su desempeño diario.",
+          1: "Insuficiente: Asume un rol negativo sin indicios de apego, lealtad o compromiso con la organización."
+        }
+      }
+    ];
+
+    let isGapsRevealed = false;
+    let isSubmitted = false;
+    let isSubmitting = false;
+    let submittedAt = null;
+    let submittedSnapshot = null;
+
+    function huella() {
+      const m = getRawFieldsMap();
+      return JSON.stringify(Object.keys(m).sort().map(k => [k, m[k]]));
+    }
+    function fechaLocal() {
+      const d = new Date();
+      const p = n => String(n).padStart(2, "0");
+      return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      renderCompetencies();
+
+      const fechaInput = document.getElementById("input-fecha");
+      if (fechaInput && !fechaInput.value) {
+        fechaInput.value = fechaLocal();
+      }
+
+      loadFromLocalStorage();
+      syncAllStates();
+
+      document.addEventListener("input", (e) => {
+        if (e.target.matches("input, textarea, select")) {
+          e.target.classList.remove("border-pink-600", "bg-pink-50");
+          handleDataChange(e.target.id);
+        }
+      });
+
+      document.addEventListener("change", (e) => {
+        if (e.target.matches("input[type='radio'], select")) {
+          handleDataChange(e.target.name || e.target.id);
+        }
+      });
+    });
+
+    function renderCompetencies() {
+      const container = document.getElementById("competencies-container");
+      if (!container) return;
+
+      const cardThemes = [
+        { bg: "bg-white", border: "border-purple-700", badge: "bg-purple-800 text-white" },
+        { bg: "bg-white", border: "border-cyan-500", badge: "bg-cyan-500 text-slate-950" },
+        { bg: "bg-white", border: "border-orange-500", badge: "bg-orange-500 text-white" },
+        { bg: "bg-white", border: "border-pink-500", badge: "bg-pink-500 text-white" }
+      ];
+
+      const htmlParts = [];
+      COMPETENCIES_DATA.forEach((comp, idx) => {
+        if (idx === 0) {
+          htmlParts.push(`
+            <div class="bg-purple-900 text-white px-5 py-3 rounded-2xl border-2 border-yellow-400 flex flex-wrap items-center justify-between gap-2">
+              <span class="text-xs sm:text-sm font-black uppercase tracking-wider text-yellow-300">Bloque A • Competencias de Gestión y Ejecución (Ítems a – g)</span>
+              <span class="text-xs font-bold text-purple-200">7 competencias operativas</span>
+            </div>
+          `);
+        } else if (idx === 7) {
+          htmlParts.push(`
+            <div class="bg-cyan-600 text-white px-5 py-3 rounded-2xl border-2 border-slate-950 flex flex-wrap items-center justify-between gap-2 mt-8">
+              <span class="text-xs sm:text-sm font-black uppercase tracking-wider text-yellow-300">Bloque B • Competencias Socioemocionales y Relacionales (Ítems h – m)</span>
+              <span class="text-xs font-bold text-cyan-50">6 competencias de temple y equipo</span>
+            </div>
+          `);
+        }
+
+        const theme = cardThemes[idx % cardThemes.length];
+        const escalaBlock = comp.escala
+          ? `<div class="bg-slate-100 border-l-4 border-purple-700 p-3 rounded-r-xl text-xs sm:text-sm font-bold text-slate-800">
+               <span class="text-purple-900 font-black uppercase text-xs block mb-0.5">Comportamiento Base Observable:</span>
+               ${comp.escala}
+             </div>`
+          : "";
+
+        const levelRows = [5, 4, 3, 2, 1].map(lvl => `
+          <div class="flex items-start gap-2.5 p-2 rounded-lg bg-white border border-purple-200 text-xs shadow-sm">
+            <span class="w-6 h-6 rounded-lg bg-purple-900 text-yellow-300 font-black flex items-center justify-center shrink-0">${lvl}</span>
+            <span class="font-semibold text-slate-800 leading-snug">${comp.niveles[lvl]}</span>
+          </div>
+        `).join("");
+
+        const radioButtons = [1, 2, 3, 4, 5].map(lvl => `
+          <label class="cursor-pointer flex-1">
+            <input type="radio" name="score-${comp.id}" value="${lvl}" class="peer sr-only" />
+            <div class="text-center py-2.5 px-2 rounded-xl border-2 border-slate-300 bg-slate-50 font-black text-sm text-slate-700 peer-checked:bg-purple-800 peer-checked:text-yellow-300 peer-checked:border-purple-950 peer-checked:shadow-md hover:border-purple-500 transition">
+              ${lvl}
+            </div>
+          </label>
+        `).join("");
+
+        htmlParts.push(`
+          <article id="card-comp-${comp.id}" class="sticker-card ${theme.bg} border-4 ${theme.border} p-5 sm:p-6 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b-2 border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="${theme.badge} text-sm font-black uppercase px-3 py-1 rounded-xl shadow-sm">
+                  Ítem ${comp.id.toUpperCase()}
+                </span>
+                <h3 class="text-lg sm:text-xl font-black text-slate-950">${comp.nombre}</h3>
+              </div>
+              <span id="status-comp-${comp.id}" class="text-xs font-extrabold px-3 py-1 rounded-full bg-slate-200 text-slate-700">
+                Pendiente de calificar
+              </span>
+            </div>
+
+            ${escalaBlock}
+
+            <div class="bg-purple-50/80 border-2 border-purple-200 rounded-xl p-3.5 space-y-2">
+              <div class="flex flex-wrap items-center justify-between gap-1">
+                <span class="text-xs sm:text-sm font-black text-purple-900">
+                  📋 Descriptores de Niveles (1: Insuficiente → 5: Superlativo)
+                </span>
+                <span class="text-[11px] font-extrabold text-purple-700">Compara antes de calificar</span>
+              </div>
+              <div class="space-y-1.5">
+                ${levelRows}
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start pt-1">
+              <div class="lg:col-span-4 space-y-1.5">
+                <span class="block text-xs font-black uppercase text-purple-900">
+                  Nivel observado (1 a 5) *
+                </span>
+                <div class="flex items-center gap-1.5">
+                  ${radioButtons}
+                </div>
+                <div class="flex justify-between text-[11px] font-bold text-slate-500 px-1">
+                  <span>1: Insuficiente</span>
+                  <span>5: Superlativo</span>
+                </div>
+              </div>
+
+              <div class="lg:col-span-8 space-y-1.5">
+                <label for="evid-${comp.id}" class="block text-xs font-black uppercase text-purple-900">
+                  Evidencia conductual observada (escena, situación o acción exacta) *
+                </label>
+                <textarea id="evid-${comp.id}" name="evid_${comp.id}" rows="2"
+                  placeholder="Describe qué hizo o qué dijo exactamente el evaluado para merecer esa nota (mínimo 15 caracteres y 3 palabras distintas)..."
+                  class="w-full p-3 rounded-xl border-2 border-slate-300 text-xs sm:text-sm font-semibold text-slate-800"></textarea>
+                <p id="hint-evid-${comp.id}" class="text-[11px] font-bold text-slate-500">
+                  Mínimo 15 caracteres y 3 palabras distintas (sin textos de relleno).
+                </p>
+              </div>
+            </div>
+          </article>
+        `);
+      });
+
+      container.innerHTML = htmlParts.join("");
+    }
+
+    function toggleJulioGuide() {
+      const panel = document.getElementById("julio-guide-panel");
+      const btn = document.getElementById("btn-toggle-julio");
+      if (!panel || !btn) return;
+      const isHidden = panel.classList.contains("hidden");
+      panel.classList.toggle("hidden");
+      btn.textContent = isHidden ? "🙈 Ocultar Ejemplo Guía: Caso Julio ▶" : "👁️ Ver Ejemplo Guía: Caso Julio ▶";
+    }
+
+    function isValidEvidenceText(text) {
+      const cleaned = String(text ?? "").trim();
+      if (cleaned.length < 15) return false;
+      const banned = /^(si|no|na|n\/a|ok|bien|mal|ninguna|no se|en la pelicula|en la película|todo bien|\.+|-+)$/i;
+      if (banned.test(cleaned)) return false;
+      const uniqueChars = new Set(cleaned.toLowerCase().replace(/\s+/g, "")).size;
+      if (uniqueChars < 5) return false;
+      const words = cleaned.toLowerCase().match(/[a-záéíóúüñ]{2,}/g) || [];
+      const distinctWords = new Set(words);
+      if (distinctWords.size < 3) return false;
+      return true;
+    }
+
+    function isValidSubmittedTimestamp(ts) {
+      if (typeof ts !== "string") return false;
+      const trimmed = ts.trim();
+      return trimmed.length >= 8 && /\d/.test(trimmed);
+    }
+
+    function getSelectedScore(compId) {
+      const checked = document.querySelector(`input[name="score-${compId}"]:checked`);
+      return checked ? parseInt(checked.value, 10) : null;
+    }
+
+    function isCompetencyComplete(compId) {
+      const score = getSelectedScore(compId);
+      const evid = document.getElementById(`evid-${compId}`)?.value ?? "";
+      return score !== null && isValidEvidenceText(evid);
+    }
+
+    function getCompletedCompetenciesCount() {
+      return COMPETENCIES_DATA.filter(c => isCompetencyComplete(c.id)).length;
+    }
+
+    function handleDataChange(sourceId) {
+      const isCompField = sourceId && (sourceId.startsWith("score-") || sourceId.startsWith("evid-"));
+      if (isCompField && isGapsRevealed) {
+        isGapsRevealed = false;
+        const panel = document.getElementById("gaps-results-panel");
+        if (panel) panel.classList.add("hidden");
+      }
+
+      if (isSubmitted) {
+        isSubmitted = false;
+        submittedAt = null;
+        submittedSnapshot = null;
+        showBanner("warning", "⚠️ Detectamos cambios en las respuestas posteriores al envío. Vuelvan a revelar brechas y hacer clic en 'Enviar Trabajo a Google Sheets ▶' para actualizar el registro.");
+      }
+
+      saveToLocalStorage();
+      syncAllStates();
+    }
+
+    function syncAllStates() {
+      let completedComps = 0;
+      COMPETENCIES_DATA.forEach(comp => {
+        const score = getSelectedScore(comp.id);
+        const evidEl = document.getElementById(`evid-${comp.id}`);
+        const evidText = evidEl?.value ?? "";
+        const validEvid = isValidEvidenceText(evidText);
+        const statusEl = document.getElementById(`status-comp-${comp.id}`);
+        const hintEl = document.getElementById(`hint-evid-${comp.id}`);
+
+        if (score !== null && validEvid) {
+          completedComps++;
+          if (statusEl) {
+            statusEl.textContent = `✅ Lista (Nivel ${score})`;
+            statusEl.className = "text-xs font-black px-3 py-1 rounded-full bg-lime-400 text-slate-950";
+          }
+          if (hintEl) {
+            hintEl.textContent = "✓ Evidencia conductual válida.";
+            hintEl.className = "text-[11px] font-extrabold text-lime-700";
+          }
+        } else {
+          if (statusEl) {
+            statusEl.textContent = score === null && !validEvid
+              ? "Pendiente nota y evidencia"
+              : score === null
+                ? "Falta elegir nivel (1-5)"
+                : "Falta evidencia válida";
+            statusEl.className = "text-xs font-extrabold px-3 py-1 rounded-full bg-amber-100 text-amber-900";
+          }
+          if (hintEl) {
+            if (evidText.trim().length > 0 && !validEvid) {
+              hintEl.textContent = "⚠️ Amplía la escena o acción observada (mínimo 15 caracteres y 3 palabras distintas, sin relleno).";
+              hintEl.className = "text-[11px] font-extrabold text-pink-600";
+            } else {
+              hintEl.textContent = "Mínimo 15 caracteres y 3 palabras distintas (sin textos de relleno).";
+              hintEl.className = "text-[11px] font-bold text-slate-500";
+            }
+          }
+        }
+      });
+
+      const compCounter = document.getElementById("comp-counter");
+      if (compCounter) compCounter.textContent = `${completedComps} / 13`;
+      const navCompCounter = document.getElementById("nav-comp-counter");
+      if (navCompCounter) navCompCounter.textContent = `${completedComps}/13`;
+
+      // Botón Revelar Brechas
+      const revealBtn = document.getElementById("btn-reveal-gaps");
+      if (revealBtn) {
+        if (completedComps === 13) {
+          revealBtn.disabled = false;
+          revealBtn.className = "bg-lime-400 hover:bg-lime-300 text-slate-950 font-black text-sm sm:text-base py-3.5 px-6 rounded-xl shadow-lg border-2 border-slate-950 cursor-pointer transition-all";
+          revealBtn.textContent = isGapsRevealed
+            ? "✅ Perfil Revelado y Brechas Calculadas ▶"
+            : "🔓 Revelar Perfil del Cargo y Calcular Brechas ▶";
+        } else {
+          revealBtn.disabled = true;
+          revealBtn.className = "bg-slate-400 text-slate-700 font-black text-sm sm:text-base py-3.5 px-6 rounded-xl shadow border-2 border-slate-500 cursor-not-allowed transition-all";
+          revealBtn.textContent = `🔒 Completa las 13 competencias para revelar brechas (${completedComps}/13) ▶`;
+        }
+      }
+
+      // Progreso Global
+      const trackedTextFields = Array.from(document.querySelectorAll("[data-track='true']"));
+      const filledTextCount = trackedTextFields.filter(el => (el.value ?? "").trim().length > 0).length;
+      const totalSteps = trackedTextFields.length + 13 + 1;
+      const currentSteps = filledTextCount + completedComps + (isGapsRevealed ? 1 : 0);
+      const percent = Math.round((currentSteps / totalSteps) * 100);
+
+      const bar = document.getElementById("progress-bar");
+      const text = document.getElementById("progress-percent");
+      if (bar) bar.style.width = percent + "%";
+      if (text) text.textContent = `${percent}%`;
+
+      // Doble Candado: Envío y PDF
+      const allReadyToSubmit = isFormComplete();
+      const submitBtn = document.getElementById("btn-submit-sheets");
+      const submitIcon = document.getElementById("submit-lock-icon");
+      const submitText = document.getElementById("submit-btn-text");
+
+      if (submitBtn && !isSubmitting) {
+        if (allReadyToSubmit) {
+          submitBtn.disabled = false;
+          submitBtn.classList.remove("bg-slate-300", "text-slate-500", "cursor-not-allowed", "border-slate-400");
+          submitBtn.classList.add("bg-purple-700", "hover:bg-purple-800", "text-white", "cursor-pointer", "border-purple-900", "shadow-lg");
+          if (submitIcon) submitIcon.textContent = "🚀";
+          if (submitText) submitText.textContent = isSubmitted ? "Reenviar Actualización a Google Sheets ▶" : "Enviar Trabajo a Google Sheets ▶";
+        } else {
+          submitBtn.disabled = true;
+          submitBtn.classList.add("bg-slate-300", "text-slate-500", "cursor-not-allowed", "border-slate-400");
+          submitBtn.classList.remove("bg-purple-700", "hover:bg-purple-800", "text-white", "cursor-pointer", "border-purple-900", "shadow-lg");
+          if (submitIcon) submitIcon.textContent = "🔒";
+          if (submitText) submitText.textContent = `Completa todos los campos y revela brechas (${percent}%) ▶`;
+        }
+      }
+
+      const pdfBtn = document.getElementById("btn-export-pdf");
+      const lockIcon = document.getElementById("pdf-lock-icon");
+      const pdfText = document.getElementById("pdf-btn-text");
+
+      if (pdfBtn) {
+        if (canPrintPDF()) {
+          pdfBtn.disabled = false;
+          pdfBtn.classList.remove("bg-slate-300", "text-slate-500", "cursor-not-allowed", "border-slate-400");
+          pdfBtn.classList.add("bg-yellow-400", "hover:bg-yellow-300", "text-slate-950", "cursor-pointer", "border-slate-950", "shadow-lg");
+          if (lockIcon) lockIcon.textContent = "📄";
+          if (pdfText) pdfText.textContent = "Exportar a PDF / Imprimir ▶";
+        } else {
+          pdfBtn.disabled = true;
+          pdfBtn.classList.add("bg-slate-300", "text-slate-500", "cursor-not-allowed", "border-slate-400");
+          pdfBtn.classList.remove("bg-yellow-400", "hover:bg-yellow-300", "text-slate-950", "cursor-pointer", "border-slate-950", "shadow-lg");
+          if (lockIcon) lockIcon.textContent = "🔒";
+          if (pdfText) pdfText.textContent = "Exportar a PDF / Imprimir (Envía primero) ▶";
+        }
+      }
+    }
+
+    function calculateGapsSummary() {
+      let sumCand = 0;
+      let sumGap = 0;
+      let criticalCount = 0;
+      let mildCount = 0;
+      const rows = COMPETENCIES_DATA.map(comp => {
+        const candScore = getSelectedScore(comp.id) ?? 0;
+        const gap = comp.nivelInicial - candScore;
+        sumCand += candScore;
+        sumGap += gap;
+
+        let semaphoreLabel = "🟢 Cumple / Supera";
+        let semaphoreClass = "bg-lime-100 text-lime-950 border-lime-500";
+        if (gap >= 2) {
+          criticalCount++;
+          semaphoreLabel = "🔴 Brecha Crítica";
+          semaphoreClass = "bg-pink-100 text-pink-950 border-pink-500";
+        } else if (gap === 1) {
+          mildCount++;
+          semaphoreLabel = "🟡 Brecha Leve";
+          semaphoreClass = "bg-yellow-100 text-yellow-950 border-yellow-500";
+        }
+
+        return {
+          id: comp.id,
+          nombre: comp.nombre,
+          nivelInicial: comp.nivelInicial,
+          candScore,
+          gap,
+          semaphoreLabel,
+          semaphoreClass,
+          evidencia: (document.getElementById(`evid-${comp.id}`)?.value ?? "").trim()
+        };
+      });
+
+      return {
+        rows,
+        avgCand: (sumCand / COMPETENCIES_DATA.length).toFixed(2),
+        avgGap: (sumGap / COMPETENCIES_DATA.length).toFixed(2),
+        criticalCount,
+        mildCount
+      };
+    }
+
+    function renderGapsTable() {
+      const summary = calculateGapsSummary();
+      document.getElementById("stat-avg-cand").textContent = summary.avgCand;
+      document.getElementById("stat-avg-gap").textContent = summary.avgGap;
+      document.getElementById("stat-alerts").textContent = `${summary.criticalCount} Críticas • ${summary.mildCount} Leves`;
+
+      const tbody = document.getElementById("gaps-table-body");
+      tbody.innerHTML = summary.rows.map(r => `
+        <tr class="hover:bg-slate-50">
+          <td class="p-3 font-black text-purple-900 uppercase">${r.id}</td>
+          <td class="p-3 font-extrabold text-slate-900">${r.nombre}</td>
+          <td class="p-3 text-center font-black text-purple-900 bg-purple-50">${r.nivelInicial}</td>
+          <td class="p-3 text-center font-black text-cyan-900 bg-cyan-50">${r.candScore}</td>
+          <td class="p-3 text-center font-black text-slate-950">${r.gap > 0 ? "+" + r.gap : r.gap}</td>
+          <td class="p-3"><span class="px-2.5 py-1 rounded-lg border text-xs font-black ${r.semaphoreClass}">${r.semaphoreLabel}</span></td>
+        </tr>
+      `).join("");
+
+      const panel = document.getElementById("gaps-results-panel");
+      if (panel) panel.classList.remove("hidden");
+      return panel;
+    }
+
+    function revealGaps() {
+      if (getCompletedCompetenciesCount() < 13) {
+        showBanner("error", "⚠️ Debes calificar las 13 competencias y escribir una evidencia válida en cada una antes de revelar el perfil.");
+        return;
+      }
+
+      isGapsRevealed = true;
+      const panel = renderGapsTable();
+      if (panel) panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+
+      saveToLocalStorage();
+      syncAllStates();
+    }
+
+    function isFormComplete() {
+      const tracked = Array.from(document.querySelectorAll("[data-track='true']"));
+      const emptyTracked = tracked.filter(el => (el.value ?? "").trim() === "");
+      return emptyTracked.length === 0 && getCompletedCompetenciesCount() === 13 && isGapsRevealed;
+    }
+
+    function canPrintPDF() {
+      return isSubmitted === true && isValidSubmittedTimestamp(submittedAt) && submittedSnapshot !== null && submittedSnapshot === huella() && isFormComplete();
+    }
+
+    function getRawFieldsMap() {
+      const map = {};
+      document.querySelectorAll("input, textarea, select").forEach(el => {
+        if (el.type === "radio") {
+          if (el.checked) map[el.name] = el.value;
+        } else if (el.id && el.type !== "file") {
+          map[el.id] = el.value ?? "";
+        }
+      });
+      return map;
+    }
+
+    function getFormData() {
+      const summary = calculateGapsSummary();
+      const recurso = (document.getElementById("input-recurso")?.value ?? "").trim();
+      const evaluado = (document.getElementById("input-evaluado")?.value ?? "").trim();
+      const perfil = (document.getElementById("input-perfil-evaluado")?.value ?? "").trim();
+
+      const blockAG = summary.rows.slice(0, 7).map(r =>
+        `[${r.id.toUpperCase()}. ${r.nombre}: Nivel ${r.candScore}/5 (Cargo: ${r.nivelInicial}, Dist: ${r.gap > 0 ? "+" + r.gap : r.gap})] Evidencia: ${r.evidencia}`
+      ).join(" | ");
+
+      const blockHM = summary.rows.slice(7).map(r =>
+        `[${r.id.toUpperCase()}. ${r.nombre}: Nivel ${r.candScore}/5 (Cargo: ${r.nivelInicial}, Dist: ${r.gap > 0 ? "+" + r.gap : r.gap})] Evidencia: ${r.evidencia}`
+      ).join(" | ");
+
+      const criticalList = summary.rows
+        .filter(r => r.gap >= 1)
+        .map(r => `${r.id.toUpperCase()}. ${r.nombre} (Dist: +${r.gap})`)
+        .join(", ") || "Ninguna brecha positiva";
+
+      const dictamen = (document.getElementById("dictamen-final")?.value ?? "").trim();
+      const plan = (document.getElementById("plan-desarrollo")?.value ?? "").trim();
+
+      return {
+        materia: (document.getElementById("input-materia")?.value ?? "").trim(),
+        actividad_id: (document.getElementById("input-actividad-id")?.value ?? "I3perfiles2_ACT05").trim(),
+        grupo: (document.getElementById("input-grupo")?.value ?? "").trim(),
+        participantes: (document.getElementById("input-participantes")?.value ?? "").trim(),
+        fecha: document.getElementById("input-fecha")?.value ?? "",
+        item1: `Recurso: ${recurso} | Evaluado: ${evaluado} | Perfil Profesional: ${perfil}`,
+        item2: blockAG,
+        item3: blockHM,
+        item4: `Promedio Evaluado: ${summary.avgCand}/5.0 | Promedio Brecha (Distancia): ${summary.avgGap} | Alertas: ${summary.criticalCount} Críticas, ${summary.mildCount} Leves (${criticalList})`,
+        item5: `Dictamen Final: ${dictamen} || Plan de Desarrollo: ${plan}`,
+        rawFields: getRawFieldsMap(),
+        estado: "Entregado"
+      };
+    }
+
+    function saveToLocalStorage() {
+      try {
+        const data = {
+          rawFields: getRawFieldsMap(),
+          isGapsRevealed: isGapsRevealed,
+          isSubmitted: isSubmitted,
+          submittedAt: submittedAt,
+          submittedSnapshot: submittedSnapshot,
+          timestamp: new Date().toISOString()
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+        const badge = document.getElementById("autosave-text");
+        if (badge) {
+          badge.textContent = "Guardado local (" + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }) + ")";
+        }
+      } catch (e) {
+        const badge = document.getElementById("autosave-text");
+        if (badge) badge.textContent = "Almacenamiento local restringido";
+      }
+    }
+
+    function camposPermitidos() {
+      const ids = new Set();
+      document.querySelectorAll("input, textarea, select").forEach(el => {
+        if (el.type === "file" || el.type === "radio" || !el.id) return;
+        if (el.readOnly || el.id === "input-actividad-id" || el.id === "input-materia") return;
+        ids.add(el.id);
+      });
+      return ids;
+    }
+
+    // Aplica solo claves conocidas, con valores válidos y largo acotado. Devuelve cuántos campos aplicó.
+    function applyFieldsMap(fields) {
+      if (!fields || typeof fields !== "object" || Array.isArray(fields)) return 0;
+      const permitidos = camposPermitidos();
+      const compIds = COMPETENCIES_DATA.map(c => c.id);
+      const aplicar = [];
+      Object.entries(fields).forEach(([key, val]) => {
+        if (/^score-[a-m]$/.test(key) && compIds.includes(key.slice(6))) {
+          if (["1", "2", "3", "4", "5"].includes(String(val))) aplicar.push(["radio", key, String(val)]);
+        } else if (permitidos.has(key) && typeof val === "string") {
+          aplicar.push(["texto", key, val.slice(0, 2000)]);
+        }
+      });
+      aplicar.forEach(([tipo, key, val]) => {
+        if (tipo === "radio") {
+          const radio = document.querySelector(`input[name="${key}"][value="${val}"]`);
+          if (radio) radio.checked = true;
+        } else {
+          const el = document.getElementById(key);
+          if (el) el.value = val;
+        }
+      });
+      return aplicar.length;
+    }
+
+    function loadFromLocalStorage() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (!saved) return;
+        const parsed = JSON.parse(saved);
+        if (parsed.rawFields && typeof parsed.rawFields === "object") {
+          applyFieldsMap(parsed.rawFields);
+        }
+        if (parsed.isGapsRevealed && getCompletedCompetenciesCount() === 13) {
+          isGapsRevealed = true;
+          renderGapsTable();
+        }
+        const validSubmission = Boolean(parsed.isSubmitted) && isValidSubmittedTimestamp(parsed.submittedAt) && typeof parsed.submittedSnapshot === "string" && parsed.submittedSnapshot === huella() && isFormComplete();
+        isSubmitted = validSubmission;
+        submittedAt = validSubmission ? parsed.submittedAt : null;
+        submittedSnapshot = validSubmission ? parsed.submittedSnapshot : null;
+        if (isSubmitted) {
+          showBanner("success", `✅ Sesión recuperada: trabajo enviado previamente el ${submittedAt}. Pueden exportar su PDF cuando lo necesiten.`);
+        }
+      } catch (e) {
+        console.warn("Error leyendo LocalStorage:", e);
+      }
+    }
+
+    function downloadBackup() {
+      const backupObj = {
+        actividad_id: document.getElementById("input-actividad-id")?.value || "I3perfiles2_ACT05",
+        exportado_en: new Date().toISOString(),
+        isGapsRevealed: isGapsRevealed,
+        isSubmitted: false,
+        submittedAt: null,
+        rawFields: getRawFieldsMap(),
+        payload_evaluador: getFormData()
+      };
+      const blob = new Blob([JSON.stringify(backupObj, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      const grupoSafe = (document.getElementById("input-grupo")?.value || "equipo").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9_-]/g, "_");
+      a.href = url;
+      a.download = `I3perfiles2_ACT05_${grupoSafe}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    function handleFileUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      if (file.size > 2 * 1024 * 1024) {
+        showBanner("error", "❌ El archivo es demasiado grande para ser un respaldo válido.");
+        event.target.value = "";
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+            throw new Error("Estructura JSON no reconocida");
+          }
+          const fields = (parsed.rawFields && typeof parsed.rawFields === "object") ? parsed.rawFields : parsed;
+          const aplicados = applyFieldsMap(fields);
+          if (aplicados === 0) {
+            throw new Error("Sin campos reconocibles");
+          }
+          if (parsed.isGapsRevealed === true && getCompletedCompetenciesCount() === 13) {
+            isGapsRevealed = true;
+            renderGapsTable();
+          } else {
+            isGapsRevealed = false;
+            document.getElementById("gaps-results-panel")?.classList.add("hidden");
+          }
+          // Un JSON importado NUNCA restaura el estado "enviado": hay que enviar de nuevo.
+          isSubmitted = false;
+          submittedAt = null;
+          submittedSnapshot = null;
+          saveToLocalStorage();
+          syncAllStates();
+          showBanner("warning", "📂 Respaldo JSON cargado en el dispositivo. Verifiquen las 13 competencias, revelen las brechas y hagan clic en 'Enviar Trabajo a Google Sheets ▶' para registrar la entrega y habilitar el PDF.");
+        } catch (err) {
+          showBanner("error", "❌ El archivo JSON seleccionado no tiene un formato válido.");
+        }
+      };
+      reader.onerror = function () {
+        showBanner("error", "❌ No se pudo leer el archivo seleccionado.");
+      };
+      reader.readAsText(file);
+      event.target.value = "";
+    }
+
+    function showBanner(type, message) {
+      const banner = document.getElementById("status-banner");
+      if (!banner) return;
+      banner.classList.remove("hidden", "bg-lime-100", "text-lime-900", "border-lime-500", "bg-pink-100", "text-pink-900", "border-pink-500", "bg-yellow-100", "text-yellow-900", "border-yellow-500");
+      banner.classList.add("border-2");
+      if (type === "success") {
+        banner.classList.add("bg-lime-100", "text-lime-900", "border-lime-500");
+      } else if (type === "warning") {
+        banner.classList.add("bg-yellow-100", "text-yellow-900", "border-yellow-500");
+      } else {
+        banner.classList.add("bg-pink-100", "text-pink-900", "border-pink-500");
+      }
+      banner.textContent = message;
+    }
+
+    async function submitToSheets() {
+      if (isSubmitting) return;
+
+      const missingText = Array.from(document.querySelectorAll("[data-track='true']")).filter(el => (el.value ?? "").trim() === "");
+      if (missingText.length > 0) {
+        missingText.forEach(el => el.classList.add("border-pink-600", "bg-pink-50"));
+        showBanner("error", `⚠️ Faltan ${missingText.length} campo(s) de texto obligatorio(s) por completar (marcados en rosa).`);
+        missingText[0].scrollIntoView({ behavior: "smooth", block: "center" });
+        missingText[0].focus();
+        return;
+      }
+
+      if (getCompletedCompetenciesCount() < 13) {
+        showBanner("error", `⚠️ Faltan competencias por calificar o sin evidencia válida (${getCompletedCompetenciesCount()}/13). Revisa las 13 tarjetas.`);
+        return;
+      }
+
+      if (!isGapsRevealed) {
+        showBanner("error", "⚠️ Debes presionar 'Revelar Perfil del Cargo y Calcular Brechas ▶' antes de enviar el trabajo.");
+        document.getElementById("sec-2")?.scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+      }
+
+      const payload = getFormData();
+      const serializedBody = JSON.stringify(payload);
+      const huellaEnvio = huella();
+      const ctl = new AbortController();
+      const timer = setTimeout(() => ctl.abort(), 20000);
+
+      isSubmitting = true;
+      const btn = document.getElementById("btn-submit-sheets");
+      const submitIcon = document.getElementById("submit-lock-icon");
+      const submitText = document.getElementById("submit-btn-text");
+      if (btn) btn.disabled = true;
+      if (submitIcon) submitIcon.textContent = "⏳";
+      if (submitText) submitText.textContent = "Transmitiendo respuestas a Google Sheets...";
+      showBanner("warning", "Transmitiendo el dictamen de evaluación al servidor docente de Instituto i3... Por favor espera.");
+
+      try {
+        await fetch(WEBHOOK_URL, {
+          method: "POST",
+          mode: "no-cors",
+          signal: ctl.signal,
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+          },
+          body: serializedBody
+        });
+
+        if (huella() !== huellaEnvio) {
+          // Se editó mientras se enviaba: lo registrado ya no coincide con lo que se ve.
+          isSubmitted = false;
+          submittedAt = null;
+          submittedSnapshot = null;
+          saveToLocalStorage();
+          showBanner("warning", "⚠️ Modificaron sus respuestas mientras se enviaban. Presionen de nuevo 'Enviar Trabajo a Google Sheets ▶' para registrar la versión final y habilitar el PDF.");
+        } else {
+          isSubmitted = true;
+          submittedAt = new Date().toLocaleString("es-CO", { dateStyle: "short", timeStyle: "medium" });
+          submittedSnapshot = huellaEnvio;
+          saveToLocalStorage();
+          showBanner("success", `✅ Envío realizado hacia Google Sheets (${submittedAt}) y respaldado localmente. Ya pueden generar y descargar su PDF oficial. Si su docente no ve el registro, descarguen el respaldo JSON y repórtenlo.`);
+        }
+      } catch (error) {
+        isSubmitted = false;
+        submittedAt = null;
+        submittedSnapshot = null;
+        saveToLocalStorage();
+        const tiempo = error && error.name === "AbortError";
+        showBanner("error", tiempo
+          ? "❌ El envío tardó demasiado (más de 20 s). Revisen su conexión, descarguen el respaldo JSON por seguridad e intenten enviar de nuevo."
+          : `❌ Falló la conexión remota con Google Sheets (${error.message}). Sus respuestas siguen guardadas localmente en este dispositivo: descarguen el respaldo JSON por seguridad e intenten enviar de nuevo.`);
+      } finally {
+        clearTimeout(timer);
+        isSubmitting = false;
+        syncAllStates();
+      }
+    }
+
+    function escapeHtml(str) {
+      return String(str ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;")
+        .replace(/\n/g, "<br>");
+    }
+
+    function openPreview() {
+      if (!canPrintPDF()) {
+        showBanner("error", "🔒 Acceso bloqueado: primero deben completar los campos, revelar brechas y enviar el trabajo a Google Sheets.");
+        return;
+      }
+
+      const r = getRawFieldsMap();
+      const summary = calculateGapsSummary();
+      const previewWin = window.open("", "_blank");
+      if (!previewWin) {
+        showBanner("error", "⚠️ El navegador bloqueó la ventana emergente. Permitan los pop-ups para visualizar y guardar su PDF.");
+        return;
+      }
+
+      const tableRowsHtml = summary.rows.map(row => `
+        <tr>
+          <td style="text-align:center;font-weight:bold;text-transform:uppercase;">${escapeHtml(row.id)}</td>
+          <td><strong>${escapeHtml(row.nombre)}</strong></td>
+          <td style="text-align:center;">${row.nivelInicial}</td>
+          <td style="text-align:center;font-weight:bold;">${row.candScore}</td>
+          <td style="text-align:center;font-weight:bold;">${row.gap > 0 ? "+" + row.gap : row.gap}</td>
+          <td>${escapeHtml(row.semaphoreLabel)}</td>
+          <td>${escapeHtml(row.evidencia)}</td>
+        </tr>
+      `).join("");
+
+      const htmlDoc = `<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reporte PDF - ${escapeHtml(r["input-actividad-id"])} - ${escapeHtml(r["input-evaluado"])}</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 14mm;
+    }
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #111827;
+      line-height: 1.4;
+      margin: 0;
+      padding: 18px;
+    }
+    .no-print {
+      background: #faf5ff;
+      border: 2px solid #581c87;
+      padding: 12px 18px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .btn-print {
+      background: #581c87;
+      color: #facc15;
+      border: 2px solid #3b0764;
+      padding: 10px 18px;
+      font-size: 13.5px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .header-box {
+      border-bottom: 4px solid #facc15;
+      background: #581c87;
+      color: #ffffff;
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      color: #facc15;
+      font-size: 17px;
+      margin: 0 0 4px 0;
+    }
+    h2 {
+      color: #581c87;
+      font-size: 14px;
+      border-bottom: 2px solid #e9d5ff;
+      padding-bottom: 3px;
+      margin: 16px 0 8px 0;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+    .meta-grid, .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+      font-size: 11px;
+      table-layout: fixed;
+    }
+    .meta-grid td, .comp-table th, .comp-table td {
+      border: 1px solid #94a3b8;
+      padding: 6px 8px;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      vertical-align: top;
+    }
+    .comp-table th {
+      background-color: #581c87;
+      color: #facc15;
+      font-weight: bold;
+    }
+    .comp-table tr {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .answer-box {
+      border: 1px solid #94a3b8;
+      border-left: 4px solid #581c87;
+      border-radius: 6px;
+      padding: 9px 11px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    .answer-label {
+      font-weight: bold;
+      color: #581c87;
+      margin-bottom: 4px;
+      display: block;
+    }
+    .footer-print {
+      margin-top: 20px;
+      padding-top: 8px;
+      border-top: 1px solid #cbd5e1;
+      font-size: 10px;
+      color: #475569;
+      text-align: right;
+    }
+    @media print {
+      .no-print { display: none !important; }
+      body { padding: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="no-print">
+    <div>
+      <strong style="color:#581c87;">Vista Previa Oficial de Evidencia • Instituto i3</strong><br>
+      <span style="font-size:12px;color:#475569;">Haz clic en el botón para imprimir o elegir "Guardar como PDF".</span>
+    </div>
+    <button class="btn-print" onclick="window.print()">🖨️ Imprimir o Guardar como PDF ▶</button>
+  </div>
+
+  <div class="header-box">
+    <h1>Instituto i3 • Laboratorio de Evaluación Conductual: Del Comportamiento a la Brecha</h1>
+    <div style="font-size:11.5px;color:#f3e8ff;">Módulo 2: Estructurar Perfiles 2 • Sesión 5: Matriz de 13 Competencias Transversales</div>
+  </div>
+
+  <table class="meta-grid">
+    <tr>
+      <td><strong>ID Actividad:</strong> ${escapeHtml(r["input-actividad-id"])}</td>
+      <td><strong>Programa / Módulo:</strong> ${escapeHtml(r["input-materia"])}</td>
+    </tr>
+    <tr>
+      <td><strong>Equipo / Grupo:</strong> ${escapeHtml(r["input-grupo"])}</td>
+      <td><strong>Fecha / Envío Remoto:</strong> ${escapeHtml(r["input-fecha"])} (${escapeHtml(submittedAt)})</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Integrantes del Comité Evaluador:</strong> ${escapeHtml(r["input-participantes"])}</td>
+    </tr>
+    <tr>
+      <td><strong>Recurso / Caso Analizado:</strong> ${escapeHtml(r["input-recurso"])}</td>
+      <td><strong>Candidato Evaluado:</strong> ${escapeHtml(r["input-evaluado"])}</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Perfil Profesional / Cargo Proyectado:</strong> ${escapeHtml(r["input-perfil-evaluado"])}</td>
+    </tr>
+    <tr>
+      <td><strong>Promedio del Evaluado:</strong> ${summary.avgCand} / 5.0</td>
+      <td><strong>Promedio de Brecha (Distancia):</strong> ${summary.avgGap} (${summary.criticalCount} Críticas, ${summary.mildCount} Leves)</td>
+    </tr>
+  </table>
+
+  <h2>1. Matriz de 13 Competencias, Evidencias y Brechas</h2>
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th style="width:6%;">Ítem</th>
+        <th style="width:17%;">Competencia</th>
+        <th style="width:8%;">Cargo</th>
+        <th style="width:9%;">Evaluado</th>
+        <th style="width:8%;">Dist.</th>
+        <th style="width:16%;">Semáforo</th>
+        <th style="width:36%;">Evidencia Conductual Observada</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${tableRowsHtml}
+    </tbody>
+  </table>
+
+  <h2>2. Dictamen Final y Plan de Desarrollo</h2>
+  <div class="answer-box">
+    <span class="answer-label">Dictamen del Comité Evaluador:</span>
+    ${escapeHtml(r["dictamen-final"])}
+  </div>
+  <div class="answer-box">
+    <span class="answer-label">Plan de Cierre de Brechas:</span>
+    ${escapeHtml(r["plan-desarrollo"])}
+  </div>
+
+  <div class="footer-print">
+    Instituto i3 • inclusión • inflexión • impacto | Evidencia verificada y transmitida el ${escapeHtml(submittedAt)}
+  </div>
+</body>
+</html>`;
+
+      previewWin.document.open();
+      previewWin.document.write(htmlDoc);
+      previewWin.document.close();
+    }
+  </script>
+</body>
+</html>
